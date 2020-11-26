@@ -21,9 +21,9 @@ namespace FunFridayAPI.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            //var events = funfridaydbContext.Events.Select(e => e.Name);
-            //return events.ToList();
-            return new string[] { "Hello", "Hai" };
+            var events = funfridaydbContext.Events.Select(e => e.Name);
+            return events.ToList();
+            //return new string[] { "Hello", "Hai" };
         }
      }
 }
