@@ -21,3 +21,9 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
+    - name: 'Deploy to Azure WebApp'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'funfridayapiapp'
+        publish-profile: ${{ secrets.FUNFRIDAYPUBLISHPROF }}
+        package: .
