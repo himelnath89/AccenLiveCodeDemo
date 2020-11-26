@@ -13,7 +13,7 @@ namespace FunFridayAPI.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing1", "Bracing1", "Chilly1", "Cool1", "Mild1", "Warm1", "Balmy1", "Hot1", "Sweltering1", "Scorching1", "Melbourne1"
+            "Freezing12", "Bracing12", "Chilly12", "Cool12", "Mild12", "Warm12", "Balmy12", "Hot12", "Sweltering12", "Scorching12", "Melbourne12"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
