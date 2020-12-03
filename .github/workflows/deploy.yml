@@ -22,8 +22,8 @@ jobs:
     - uses: cschleiden/replace-tokens@v1.0
       with:
         files: '["**/appsettings.json"]' 
-        env:
-          ConnectionString: ${{ secrets.FUNFRIDAYCONNSTR }}
+      env:
+        ConnectionString: ${{ secrets.FUNFRIDAYCONNSTR }}
     - name: Build
       run: |
           dotnet build --configuration Release --no-restore
